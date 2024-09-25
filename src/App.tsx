@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Searchbar from "./components/Searchbar.tsx";
 import Weather from "./components/Weather.tsx";
-import { WeatherInfo } from "./types.tsx"
+import { WeatherInfo, SetSearchedLocation } from "./types.tsx"
 
 
 
@@ -25,7 +25,9 @@ export default function App(){
 
     return (
         <div className="App w-full h-screen custom-gradient	px-14 py-4">
-            <Searchbar/>
+            <Searchbar
+                setSearchedLocation = {setSearchedLocation}
+            />
             <Weather
                 weatherInfo = {weatherInfo}
             />

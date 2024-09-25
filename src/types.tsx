@@ -17,3 +17,5 @@ export interface WeatherInfo  {
       humidity: number,
     };
   }
+
+  export type SetSearchedLocation = React.Dispatch<React.SetStateAction<string>>;
