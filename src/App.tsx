@@ -12,16 +12,17 @@ export default function App(){
     const [searchedLocation, setSearchedLocation] = useState("Lagos")
     const [weatherInfo, setWeatherInfo] = useState<WeatherInfo>({})
 
-
-
+    if (searchedLocation === "" ){
+        setSearchedLocation("Lagos")
+    }
 
     useEffect(() => {
         fetch(`https://api.weatherapi.com/v1/current.json?key=c764207335a34d66a9b204020242309&q=${searchedLocation}&aqi=yes`)
         .then(res => res.json())
         .then(data => setWeatherInfo(data))
-    },[])
+    },[searchedLocation])
 
-    console.log(weatherInfo)
+    console.log(searchedLocation)
 
     return (
         <div className="App w-full h-screen custom-gradient	px-14 py-4">
