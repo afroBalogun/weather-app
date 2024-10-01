@@ -20,9 +20,9 @@ const Weather: React.FC<WeatherProps> = ({ weatherInfo, F_Temperature }) => {
 
     return (
         <div className="weather w-full  flex justify-between gap-[5px] items-end 
-            min-[400px]:justify-around
+            min-[400px]:justify-around 
             lg:justify-between lg:w-auto lg:h-full lg:gap-5
-            xl:gap-10
+            xl:gap-8
             2xl:gap-10
         ">
             <div className="condition h-full flex flex-col items-center justify-between text-xs text-based">
@@ -41,7 +41,8 @@ const Weather: React.FC<WeatherProps> = ({ weatherInfo, F_Temperature }) => {
             <div className="location h-full relative justify-between flex flex-col gap-1 font-medium text-based">
                 
                 <div className="text-sm font-normal flex flex-col
-                    min-[400px]:text-base
+                    min-[350px]:w-[110px]
+                    min-[400px]:text-base     min-[400px]:w-[170px]   min-[420px]:w-auto                
                     sm:text-xl
                     md:text-2xl
                     2xl:text-4xl

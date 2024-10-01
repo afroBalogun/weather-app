@@ -14,7 +14,7 @@ export default function App(){
     const [searchedLocation, setSearchedLocation] = useState("Lagos")
     const [weatherInfo, setWeatherInfo] = useState<WeatherInfo>({})
     const [F_Temperature, setF_Temperature] = useState<boolean>(true)
-    const [loading, setLoading] = useState<boolean>(true); // Add loading state
+    const [loading, setLoading] = useState<boolean>(true); 
 
 
 
@@ -48,7 +48,7 @@ export default function App(){
       />
       {loading ? (
         <div className="flex justify-center items-center h-full">
-          <img src="images/loading.gif" alt="" /> {/* You can replace this with a spinner or loader */}
+          <img src="images/loading.gif" alt="" /> 
         </div>
       ) : (
         <div className="flex justify-between flex-wrap gap-10
