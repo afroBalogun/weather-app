@@ -3,11 +3,39 @@
 @tailwind utilities;
 
 
-*{
-    margin: 0;
+
+
+#root{
+    width: 100%;
 }
+
+
 
 .custom-gradient {
     @apply bg-gradient-to-tr; /* shorthand for "to right top" */
     background-image: linear-gradient(to right top, #a8a8a8, #b1b1b1, #b9b9b9, #c2c2c2, #cbcbcb);
   }
+
+@layer components{
+
+
+    .phone-app{
+        position: relative;
+        background: #bc5151;
+        padding: 40px 20px;
+    }
+
+    .phone-logo{
+        padding: 0px;
+        font-size: .8em;
+    }
+
+    .phone-temp{
+        position: absolute;
+    }
+
+    .phone-searchbar{
+        font-size: .8em;
+    }
+}
+
