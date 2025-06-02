@@ -7,8 +7,6 @@ A sleek and responsive weather web application built with React and Tailwind CSS
 
 **Live Site:** [https://pocket-weather.vercel.app](https://pocket-weather.vercel.app)
 
-![Weather App Preview](https://raw.githubusercontent.com/afroBalogun/weather-app/main/public/weather-app-preview.png)
-
 ---
 
 ### 📌 Table of Contents
