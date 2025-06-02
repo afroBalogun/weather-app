@@ -95,4 +95,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Let me know if you'd like help adding the `LICENSE` file or uploading preview screenshots for better visual impact.
